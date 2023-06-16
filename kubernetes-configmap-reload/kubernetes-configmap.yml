@@ -28,4 +28,4 @@ spec:
     spec:
       containers:
         - name: kubernetes-configmap-reload
-          image: writetoritika/kubernetes-configmap-reload:latest
+          image: dockerisimage/kubernetes-configmap-reload:latest
