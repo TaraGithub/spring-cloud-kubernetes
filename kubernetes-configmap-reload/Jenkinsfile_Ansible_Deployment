@@ -61,9 +61,9 @@ pipeline {
 	        steps {
 	            dir("${params.AppName}") {
 	                withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', 
-	                        accessKeyVariable: 'AWS_ACCESS_KEY_ID', 
+	                        accessKeyVariable: 'AKIAQTUR26WKIEPLICM5', 
 	                        credentialsId: 'AWS_Credentials', 
-	                        secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) {
+	                        secretKeyVariable: '7In+CgGuPRIVLYtjfoDija19XrcQ0hopqmv1DvgF']]) {
 	                    withCredentials([kubeconfigContent(credentialsId: 'kubernetes_config', 
 	                        variable: 'KUBECONFIG')]) {
 	                        sh 'curl -LO "https://storage.googleapis.com/kubernetes-release/release/v1.20.5/bin/linux/amd64/kubectl"'  
